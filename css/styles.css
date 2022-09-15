@@ -49,6 +49,10 @@ body {
     letter-spacing: 0.02em;
 }
 
+.nav .current {
+    color: var(--accent-text-color);
+}
+
 .nav .link:hover,
 .nav .link:focus {
     color: var(--accent-text-color);
