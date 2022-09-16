@@ -39,7 +39,7 @@ body {
 }
 
 .container {
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -293,6 +293,7 @@ body {
 .portfolio-nav {
     display: flex;
     justify-content:center;
+    margin-top: 94px;
     margin-bottom: 50px;
 }
 
@@ -327,11 +328,31 @@ body {
     cursor: pointer;
 }
 
+/* portfolio section */
+
+.portfolio-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+}
+
 /* portfolio list */
 
 .portfolio-list {
     background: var(--hero-text-color);
     border: 1px solid #EEEEEE;
+
+    margin-right: 27px;
+    margin-bottom: 30px;
+    /* не знайдена помилка відстані між картками. має бути 30px */
+}
+
+.portfolio-section .portfolio-list:nth-child(3n) {
+    margin-right: 0;
+}
+
+.portfolio-section .portfolio-list:nth-child(n + 7) {
+  margin-bottom: 0;
 }
 
 .portfolio-list-title {
@@ -340,9 +361,13 @@ body {
     line-height: 2.0;
     letter-spacing: 0.06em;
     color: var(--title-text-colour);
+    padding-top: 20px;
+    padding-left: 24px;
 }
 
 .portfolio-list-text {
     font-size: 16px;
     line-height: 1.88;
+    padding-left: 24px;
+    padding-bottom: 24px;
 }
