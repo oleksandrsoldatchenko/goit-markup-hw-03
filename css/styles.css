@@ -15,11 +15,18 @@ html {
     box-sizing: border-box;
 }
 
-/* *,
+*,
 *::before,
 *::after {
     box-sizing: inherit;
-} */
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
 
 body {
     background-color: var(--primary-bgr-color);
@@ -50,6 +57,7 @@ body {
     display: flex;
     align-items: center;
     justify-content:space-between;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .logo-and-nav {
@@ -128,9 +136,6 @@ body {
 }
 
 .head-title {
-    margin-top: 0;
-    margin-bottom: 30px;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
@@ -140,6 +145,14 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-text-color);
+    padding-top: 200px;
+    padding-bottom: 30px;
+}
+
+.head-btn {
+    display: flex;
+    justify-content:center;
+    padding-bottom: 200px;
 }
 
 .btn-blue {
@@ -157,8 +170,7 @@ body {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    text-align: center;
-}
+    text-align: center;}
 
 .btn-blue:hover,
 .btn-blue:focus {
@@ -169,6 +181,12 @@ body {
 
 /* main */
 
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 94px;
+}
+
 .section-title {
     font-family: 'Roboto';
     font-weight: 700;
@@ -176,6 +194,26 @@ body {
     line-height: 1.17;
     color: var(--title-text-colour);
     text-align: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.functions-list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+}
+
+.team-card {
+    background: var(--primary-bgr-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .title {
@@ -185,6 +223,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     color: var(--title-text-colour);
+    padding-bottom: 10px;
 }
 
 .team {
@@ -197,6 +236,8 @@ body {
     line-height: 1.19;
     text-align: center;
     color: var(--title-text-colour);
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .team-role {
@@ -205,12 +246,14 @@ body {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-bottom: 30px;
 }
 
 /* footer */
 
 .footer-logo {
-    margin: 60px 0 20px 0;
+    margin: 0;
+    padding: 60px 0 20px 0;
 }
 
 .logo-accent-footer {
@@ -226,6 +269,7 @@ body {
     line-height: 1.71;
     color: var(--hero-text-color);
     margin: 0;
+    padding: 0;
 }
 
 .footer-contact {
@@ -235,11 +279,12 @@ body {
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
-    margin: 9px 0 0 0;
+    margin: 0;
+    padding: 9px 0 0 0;
 }
 
 .footer-ad-cont {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
 }
 
 /* portfolio page */
