@@ -251,13 +251,17 @@ body {
 
 /* footer */
 
-.footer-logo {
-    margin: 0;
-    padding: 60px 0 20px 0;
+.footer {
+    display: block;
+    padding: 60px 0;
 }
 
 .logo-accent-footer {
     color: var(--hero-text-color);
+}
+
+.footer-adress-cont {
+    padding-top: 20px;
 }
 
 .footer-adress {
@@ -268,8 +272,10 @@ body {
     font-size: 14px;
     line-height: 1.71;
     color: var(--hero-text-color);
-    margin: 0;
-    padding: 0;
+}
+
+.footer-contact-cont {
+    padding-top: 9px;
 }
 
 .footer-contact {
@@ -283,27 +289,29 @@ body {
     padding: 9px 0 0 0;
 }
 
-.footer-ad-cont {
-    padding-bottom: 60px;
+/* portfolio page */
+
+.portfolio {
+    margin: 94px 0;
 }
 
-/* portfolio page */
 /* portfolio buttons */
 
-.portfolio-nav {
+.portfolio-btn-cont {
     display: flex;
-    justify-content:center;
-    margin-top: 94px;
+    justify-content: center;
     margin-bottom: 50px;
+}
+
+.portfolio-nav {
+    display: inline-flex;
+    margin-right: 8px;
 }
 
 .btn-gray {
     border-radius: 4px;
     padding: 6px 22px;
     min-width: 73px;
-
-    margin-right: 8px;
-    /* Не прибрано відступ крайного правого елементу. Як? */
 
     color: var(--title-text-colour);
     background-color: var(--secondary-bgr-color);
@@ -316,9 +324,9 @@ body {
     letter-spacing: 0.03em;
 }
 
-/* .portfolio-nav .btn-gray:last-child {
+.portfolio-btn-cont .portfolio-nav:last-child {
     margin-right: 0px;
-} */
+}
 
 .btn-gray:hover,
 .btn-gray:focus {
@@ -333,18 +341,22 @@ body {
 .portfolio-section {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px;
 }
 
 /* portfolio list */
 
 .portfolio-list {
     background: var(--hero-text-color);
-    border: 1px solid #EEEEEE;
-
-    margin-right: 27px;
+    
+    margin-right: 30px;
     margin-bottom: 30px;
-    /* не знайдена помилка відстані між картками. має бути 30px */
+}
+
+.portfolio-dsr {
+    border: 1px solid #EEEEEE;
+    border-top: transparent;
+
+    padding: 20px;
 }
 
 .portfolio-section .portfolio-list:nth-child(3n) {
@@ -361,13 +373,9 @@ body {
     line-height: 2.0;
     letter-spacing: 0.06em;
     color: var(--title-text-colour);
-    padding-top: 20px;
-    padding-left: 24px;
 }
 
 .portfolio-list-text {
     font-size: 16px;
     line-height: 1.88;
-    padding-left: 24px;
-    padding-bottom: 24px;
 }
