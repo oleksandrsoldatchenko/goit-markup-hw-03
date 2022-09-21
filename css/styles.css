@@ -56,11 +56,11 @@ body {
 /* header */
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-
     border-bottom: 1px solid #ECECEC;
+}
+
+.header-main-container {
+    display: flex;
 }
 
 .main-nav {
@@ -74,7 +74,7 @@ body {
     align-items: center;
 }
 
-.logo {
+.logo-header {
     text-decoration: none;
     font-family: 'Raleway';
     font-weight: 700;
@@ -91,6 +91,7 @@ body {
 
 .main-cont {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
 }
 
@@ -271,6 +272,19 @@ body {
 
 .footer {
     display: block;
+}
+
+.logo-footer {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-text-color);
+}
+
+.logo-accent {
+    color: var(--logo-text-color);
 }
 
 .logo-accent-footer {
